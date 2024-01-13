@@ -13,5 +13,4 @@ changeColorBtn.addEventListener("click", handleChangeColorBtn);
 function handleChangeColorBtn(event) {
   background.style.backgroundColor = getRandomHexColor();
   span.textContent = `${background.style.backgroundColor}`
-console.log(`${span.textContent}`)
 }
