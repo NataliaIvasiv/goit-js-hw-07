@@ -15,9 +15,10 @@ createBtn.addEventListener('click', () => {
 
 
 function createBoxes(amount) {
+  boxes.innerHTML = "";
   if (amount >= 1 && amount <=100)
 {  let markup = [];
-  for (let i = 1; i <= amount; i++) {
+  for (let i = 0; i < amount; i++) {
     const boxWidth = 30 + 10 * i;
     const boxHeight = 30 + 10 * i;
     const boxColor = getRandomHexColor();
